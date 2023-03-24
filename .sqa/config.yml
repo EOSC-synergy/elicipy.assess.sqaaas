@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-maroon-jaguar.sh
-        container: qc.acc_surly-blue-rat
+        - /usr/bin/env sh .sqa/script.baggy-apricot-boar.sh
+        container: qc.acc_greasy-sepia-bison
   QC.Doc:
     repos:
       github.com/demichie/elicipy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-tangerine-civet.sh
-        container: qc.doc_leaky-brass-dingo
+        - /usr/bin/env sh .sqa/script.trippy-mustard-caterpillar.sh
+        container: qc.doc_jumpy-chartreuse-bloodhound
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-maroon-lobster.sh
-        container: qc.doc_gimpy-orange-corgi
+        - /usr/bin/env sh .sqa/script.chewy-violet-jellyfish.sh
+        container: qc.doc_homey-lemon-collie
       github.com/demichie/elicipy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-green-bobcat.sh
-        container: qc.doc_jumpy-viridian-turtle
+        - /usr/bin/env sh .sqa/script.hilly-taupe-bloodhound.sh
+        container: qc.doc_pasty-orchid-ibis
   QC.Lic:
     repos:
       github.com/demichie/elicipy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-corn-uakari.sh
-        container: qc.lic_goopy-olivine-dolphin
+        - /usr/bin/env sh .sqa/script.stuffy-firebrick-foxhound.sh
+        container: qc.lic_smelly-xanthic-caterpillar
   QC.Sec:
     repos:
       github.com/demichie/elicipy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-platinum-newt.sh
-        container: qc.sec_hazy-coral-rottweiler
+        - /usr/bin/env sh .sqa/script.surly-pink-dhole.sh
+        container: qc.sec_shaggy-sangria-chow
   QC.Sty:
     repos:
       github.com/demichie/elicipy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-blue-kudu.sh
-        container: qc.sty_smelly-magnolia-elephant
+        - /usr/bin/env sh .sqa/script.homely-malachite-macaque.sh
+        container: qc.sty_homey-apricot-tamarin
   QC.Ver:
     repos:
       github.com/demichie/elicipy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-lemon-oriole.sh
-        container: qc.ver_whiny-sangria-monkey
+        - /usr/bin/env sh .sqa/script.muzzy-charcoal-fousek.sh
+        container: qc.ver_frumpy-ecru-beaver
 timeout: 5400
