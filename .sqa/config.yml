@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-persimmon-mist.sh
-        container: qc.acc_nerdy-alizarin-indri
+        - /usr/bin/env sh .sqa/script.lanky-seashell-seahorse.sh
+        container: qc.acc_goopy-wheat-mongrel
   QC.Doc:
     repos:
       github.com/demichie/elicipy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-crimson-spoonbill.sh
-        container: qc.doc_paltry-orange-shrimp
+        - /usr/bin/env sh .sqa/script.surly-ruby-jaguar.sh
+        container: qc.doc_freaky-cyan-caracal
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-asparagus-sheep.sh
-        container: qc.doc_ready-violet-dormouse
+        - /usr/bin/env sh .sqa/script.scummy-olive-mule.sh
+        container: qc.doc_hazy-asparagus-angelfish
       github.com/demichie/elicipy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-denim-harrier.sh
-        container: qc.doc_slaphappy-cerise-horse
+        - /usr/bin/env sh .sqa/script.craggy-lemon-zorse.sh
+        container: qc.doc_messy-flax-harrier
   QC.Lic:
     repos:
       github.com/demichie/elicipy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cerise-alligator.sh
-        container: qc.lic_droopy-beige-buzzard
+        - /usr/bin/env sh .sqa/script.sleepy-chartreuse-barracuda.sh
+        container: qc.lic_nerdy-silver-quoll
   QC.Sec:
     repos:
       github.com/demichie/elicipy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-crimson-barb.sh
-        container: qc.sec_cranky-turquoise-dalmatian
+        - /usr/bin/env sh .sqa/script.snippy-carmine-catfish.sh
+        container: qc.sec_chewy-lime-pinscher
   QC.Sty:
     repos:
       github.com/demichie/elicipy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-firebrick-hyrax.sh
-        container: qc.sty_nippy-champagne-alligator
+        - /usr/bin/env sh .sqa/script.sickly-grey-mayfly.sh
+        container: qc.sty_sleepy-pear-horse
   QC.Ver:
     repos:
       github.com/demichie/elicipy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-heliotrope-setter.sh
-        container: qc.ver_shaky-rose-tarsier
+        - /usr/bin/env sh .sqa/script.scummy-puce-dachsbracke.sh
+        container: qc.ver_flaky-viridian-camel
 timeout: 5400
