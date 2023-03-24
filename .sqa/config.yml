@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-ivory-woodlouse.sh
-        container: qc.acc_cozy-cerise-skunk
+        - /usr/bin/env sh .sqa/script.shabby-russet-macaque.sh
+        container: qc.acc_woolly-smalt-barnacle
   QC.Doc:
     repos:
       github.com/demichie/elicipy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-linen-rat.sh
-        container: qc.doc_snazzy-aqua-kudu
+        - /usr/bin/env sh .sqa/script.gummy-orchid-hippopotamus.sh
+        container: qc.doc_foggy-saffron-nightingale
       github.com/demichie/elicipy git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cream-booby.sh
-        container: qc.doc_gloppy-turquoise-macaque
+        - /usr/bin/env sh .sqa/script.crabby-razzmatazz-seahorse.sh
+        container: qc.doc_zippy-asparagus-buffalo
       github.com/demichie/elicipy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-olivine-setter.sh
-        container: qc.doc_beady-scarlet-zonkey
+        - /usr/bin/env sh .sqa/script.zippy-tangerine-dhole.sh
+        container: qc.doc_tacky-white-termite
   QC.Lic:
     repos:
       github.com/demichie/elicipy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-denim-bonobo.sh
-        container: qc.lic_baggy-harlequin-uakari
+        - /usr/bin/env sh .sqa/script.foggy-sangria-sparrow.sh
+        container: qc.lic_shabby-pink-tarsier
   QC.Sec:
     repos:
       github.com/demichie/elicipy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-taupe-gorilla.sh
-        container: qc.sec_randy-black-camel
+        - /usr/bin/env sh .sqa/script.surly-tan-earwig.sh
+        container: qc.sec_hilly-aquamarine-kangaroo
   QC.Sty:
     repos:
       github.com/demichie/elicipy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-harlequin-rottweiler.sh
-        container: qc.sty_jumpy-chocolate-akita
+        - /usr/bin/env sh .sqa/script.stuffy-puce-newfoundland.sh
+        container: qc.sty_slaphappy-seashell-coral
   QC.Ver:
     repos:
       github.com/demichie/elicipy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-russet-shrimp.sh
-        container: qc.ver_chewy-burgundy-newfoundland
+        - /usr/bin/env sh .sqa/script.jumpy-chartreuse-bongo.sh
+        container: qc.ver_flabby-cinnabar-budgerigar
 timeout: 5400
