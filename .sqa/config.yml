@@ -1,0 +1,58 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.9
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/demichie/elicipy:
+      branch: main
+      repo: https://github.com/demichie/elicipy
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/demichie/elicipy git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snazzy-maroon-urchin.sh
+        container: qc.acc_lumpy-silver-dolphin
+  QC.Doc:
+    repos:
+      github.com/demichie/elicipy find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-copper-ray.sh
+        container: qc.doc_seedy-russet-antelope
+      github.com/demichie/elicipy git:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-ecru-barracuda.sh
+        container: qc.doc_tacky-cinnabar-spitz
+      github.com/demichie/elicipy markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-sepia-millipede.sh
+        container: qc.doc_ready-lavender-chameleon
+  QC.Lic:
+    repos:
+      github.com/demichie/elicipy licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-eggplant-binturong.sh
+        container: qc.lic_squirrely-russet-discus
+  QC.Sec:
+    repos:
+      github.com/demichie/elicipy bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-platinum-capybara.sh
+        container: qc.sec_homey-alizarin-slug
+  QC.Sty:
+    repos:
+      github.com/demichie/elicipy flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.greasy-linen-tarantula.sh
+        container: qc.sty_sleazy-copper-fish
+  QC.Ver:
+    repos:
+      github.com/demichie/elicipy get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-puce-mole.sh
+        container: qc.ver_cheeky-amaranth-gibbon
+timeout: 5400
